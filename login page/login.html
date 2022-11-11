@@ -1,0 +1,74 @@
+<html>
+<head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(background.png);
+            background-size: cover;
+        }
+        .container{
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+        }
+        .card{
+            padding: 60px 40px 50px 40px;
+            background:rgba(255, 255, 255, .2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            
+            border-radius: 20px;
+            
+        }
+        #name{
+            width: 200px;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid black;
+            padding: 6px;
+            margin-bottom: 20px;
+            color: black;
+        }
+        #button{
+            border-radius: 20px;
+            padding: 10px 20px;
+            background: rgb(80, 221, 214);
+            color: white;
+            margin-top: 20px;
+            border: none;
+            outline: none;
+            margin-left: 50px;
+        }
+        #button:hover{
+            background-color: rgb(235, 165, 14);
+            cursor:pointer;
+
+        }
+        a{
+            font-size: 15px;
+            color: black;
+        }
+        img{
+            border-radius: 50%;
+            position: absolute;
+            margin-left: 100px;
+            margin-left: 100px;
+            margin-top: -40px;
+        }
+    </style>
+    <body>
+        <form action="">
+            <div class ="container">
+                <img src="user.jpg" height="70" width="70">
+                <div class="card">
+                    <input type="text" placeholder="Username"id="name" required><br>
+                    <input type="password" placeholder="Password"id="name" required><br>
+                    <a href="#">Forgot Password</a><br>
+                    <input type="submit" value="LOGIN"id="button">
+                </div>
+            </div>
+        </form>
+    </body>
+</head>    
+</html>
